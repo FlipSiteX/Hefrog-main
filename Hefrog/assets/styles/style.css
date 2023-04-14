@@ -1,0 +1,194 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+.bold{
+    font-weight: 800;
+}
+
+.title{
+    text-align: center;
+}
+.title h2{
+    font-family: 'Poppins';
+    font-weight: 600;
+    font-size: 48px;
+    line-height: 72px;
+    text-transform: capitalize;
+    color: #010F52;
+}
+.title h3{
+    font-family: 'Poppins';
+    font-weight: 500;
+    font-size: 36px;
+    line-height: 64px;
+    text-transform: capitalize;
+    letter-spacing: -1px;
+    color: #010F52;
+}
+.title h4{
+    font-family: 'Poppins';
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 29px;
+    letter-spacing: -0.01em;
+    text-transform: capitalize;
+    color: #243A73;
+}
+.title h5{
+    font-family: 'Poppins';
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 30px;
+    color: rgba(0, 0, 0, 0.44);
+}
+
+header{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 100vh;
+    background: linear-gradient(96.68deg, #DEEEF7 2.88%, rgba(222, 238, 247, 0) 124.33%);
+}
+.header{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    height: 50px;
+    width: 100%;
+    margin-top: 55px;
+
+}
+.header .nav-row{
+    display: flex;
+}
+.logo{
+
+    background: url('../images/logo.png');
+    width: 230px;
+    height: 104px;
+    cursor: pointer;
+}
+.right-end{
+    display: flex;
+}
+.header .nav-row .url{
+    margin: 10px;
+}
+.header .nav-row a{
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;
+    font-size: 20px;
+    color: #243A73;
+    text-decoration: none;
+    padding: 15px 25px 15px 25px;
+    transition: .2s;
+    border-radius: 8px;
+}
+.header .nav-row .url:hover a{
+    color: white;
+    background-color: #243A73;
+    border-radius: 8px;
+    transition: .2s;
+}
+.right-end i{
+    font-size: 30px;
+    color: #243A73;
+}
+.search{
+    margin-right: 30px;
+}
+.profile{
+    margin-left: 20px;
+}
+
+header .content{
+    display: flex;
+    width: 1200px;
+    padding-top: 230px;
+}
+header .content .text{
+    width: 45%;
+}
+header .content .text h1{
+    font-weight: 400;
+    font-size: 50px;
+    color: #010F52;
+    text-transform: capitalize;
+    line-height: 80px;
+}
+header .content .text p{
+    margin-top: 30px;
+    color: #4E4E4E;
+}
+header .content .image{
+    width: 55%;
+    background: url('../images/Stepping\ up.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+.slider-buttons-row{
+    display: flex;
+    margin-top: 100px;
+}
+.slider-buttons-row .btn{
+    width: 35px;
+    height: 8px;
+    border-radius: 5px;
+    background-color: #D8D8D8;
+    margin: 0 5px 0 5px;
+    cursor: pointer;
+    transition: .2s;
+}
+.slider-buttons-row .btn:hover{
+    transform: scale(1.2, 1);
+    background-color: #243A73;
+    transition: .2s;
+}
+.slider-buttons-row .btn:nth-child(3){
+    transform: scale(1.2, 1);
+    background-color: #243A73;
+}
+
+/* блок Anything to anyone from anywhere */
+
+.gallery-section{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.gallery-section .title{
+    margin-top: 60px;
+}
+.gallery-section .gallery{
+    display: grid;
+    width: 1200px;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    gap: 145px;
+    margin-top: 70px;
+}
+.gallery-section .gallery .item{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    box-shadow: 10px 10px 30px 20px #F5F5F5;
+    border-radius: 20px;
+    height: 300px;
+}
+.gallery-section .gallery .item .icon{
+    background: url('../images/lupa.png');
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+    transform: scale(0.5, 0.5);
+    height: 100%;
+    width: 100%;
+}
