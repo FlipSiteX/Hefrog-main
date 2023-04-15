@@ -541,11 +541,31 @@ header .content .image{
 .rfq-section{
     display: flex;
     width: 1300px;
+    margin: 120px 0 150px 0;
 }
 .rfq-section .title{
     text-align: start;
 }
+.rfq-section .title .piki{
+    position: absolute;
+    top: -45px;
+    left: -45px;
+}
+.rfq-section .title .big-star{
+    position: absolute;
+    top: -70px;
+    left: 230px;
+}
+.rfq-section .title .small-star{
+    position: absolute;
+    top: -50px;
+    left: 296px;
+    transform: scale(0.5);
+}
+
 .rfq-section img:first-child{
+    position: relative;
+    top: -50px;
     margin-right: 150px;
 }
 .rfq-section .title p{
@@ -558,4 +578,26 @@ header .content .image{
 }
 .rfq-section .btns-row{
     display: flex;
+    margin-top: 50px;
+}
+.rfq-section .btns-row .btn{
+    background: #243A73;
+    box-shadow: 6px 6px 30px 6px rgba(0, 0, 0, 0.25);
+    border-radius: 8px;
+    padding: 20px 70px;
+}
+.rfq-section .btns-row .btn a{
+    text-decoration: none;
+    color: white;
+    font-family: 'Poppins';
+    font-weight: 500;
+    font-size: 24px;
+}
+.rfq-section .btns-row .btn:last-child{
+    color: #0E538C;
+    box-shadow: none;
+    background-color: transparent;
+}
+.rfq-section .btns-row .btn:last-child a{
+    color: #0E538C;
 }
