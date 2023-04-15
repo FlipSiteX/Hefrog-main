@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap');
 
 *{
     padding: 0;
@@ -13,6 +14,7 @@
 
 .title{
     text-align: center;
+    color: #010F52;
 }
 .title h2{
     font-family: 'Poppins';
@@ -20,7 +22,6 @@
     font-size: 48px;
     line-height: 72px;
     text-transform: capitalize;
-    color: #010F52;
 }
 .title h3{
     font-family: 'Poppins';
@@ -29,11 +30,10 @@
     line-height: 64px;
     text-transform: capitalize;
     letter-spacing: -1px;
-    color: #010F52;
 }
 .title h4{
     font-family: 'Poppins';
-    font-weight: 500;
+    font-weight: 600;
     font-size: 24px;
     line-height: 29px;
     letter-spacing: -0.01em;
@@ -52,7 +52,7 @@ header{
     display: flex;
     flex-direction: column;
     align-items: center;
-    height: 100vh;
+    height: 100%;
     background: linear-gradient(96.68deg, #DEEEF7 2.88%, rgba(222, 238, 247, 0) 124.33%);
 }
 .header{
@@ -78,33 +78,49 @@ header{
     display: flex;
 }
 .header .nav-row .url{
-    margin: 10px;
+    display: grid;
+    place-content: center;
+    text-align: center;
+    padding: 15px 30px 15px 30px;
+    margin: 0 15px;
+    cursor: pointer;
 }
 .header .nav-row a{
     font-family: 'Poppins', sans-serif;
     font-weight: 600;
     font-size: 20px;
-    color: #243A73;
     text-decoration: none;
-    padding: 15px 25px 15px 25px;
     transition: .2s;
     border-radius: 8px;
+    color: #243A73;
 }
-.header .nav-row .url:hover a{
-    color: white;
+.header .nav-row .url:hover{
     background-color: #243A73;
     border-radius: 8px;
     transition: .2s;
 }
+.header .nav-row .url:hover a{
+    color: white;
+}
+.header .nav-row .url:last-child{
+    color: white;
+    background-color: #243A73;
+    border-radius: 8px;
+}
+.header .nav-row .url:last-child a{
+    color: white;
+    font-size: 15px;
+}
+
 .right-end i{
     font-size: 30px;
     color: #243A73;
 }
 .search{
-    margin-right: 30px;
+    margin: 0 25px 0 20px;
 }
 .profile{
-    margin-left: 20px;
+    margin: 0 20px 0 25px;
 }
 
 header .content{
@@ -135,7 +151,7 @@ header .content .image{
 }
 .slider-buttons-row{
     display: flex;
-    margin-top: 100px;
+    margin: 100px 0 150px 0;
 }
 .slider-buttons-row .btn{
     width: 35px;
@@ -164,15 +180,24 @@ header .content .image{
     align-items: center;
 }
 .gallery-section .title{
+    position: relative;
     margin-top: 60px;
+}
+.gallery-section .title img{
+    position: absolute;
+    top: 60px;
+    right: -120px;
+}
+.gallery-section .title h3{
+    text-transform: none;
 }
 .gallery-section .gallery{
     display: grid;
     width: 1200px;
     grid-template-columns: 1fr 1fr 1fr;
     grid-template-rows: 1fr 1fr;
-    gap: 145px;
-    margin-top: 70px;
+    gap: 80px 145px;
+    margin: 70px 0 90px 0;
 }
 .gallery-section .gallery .item{
     display: flex;
@@ -181,14 +206,212 @@ header .content .image{
     text-align: center;
     box-shadow: 10px 10px 30px 20px #F5F5F5;
     border-radius: 20px;
-    height: 300px;
+    height: 280px;
+    width: 105%;
 }
 .gallery-section .gallery .item .icon{
-    background: url('../images/lupa.png');
-    background-size: contain;
-    background-position: center;
-    background-repeat: no-repeat;
     transform: scale(0.5, 0.5);
     height: 100%;
     width: 100%;
+}
+.gallery-section .gallery .item:first-child .icon{
+    background: url('../images/lupa.png');
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+}
+.gallery-section .gallery .item:nth-child(2) .icon{
+    background: url('../images/image\ 209.png');
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+}
+.gallery-section .gallery .item:nth-child(3) .icon{
+    background: url('../images/image\ 210.png');
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+}
+.gallery-section .gallery .item:nth-child(4) .icon{
+    background: url('../images/image\ 211.png');
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+}
+.gallery-section .gallery .item:nth-child(5) .icon{
+    background: url('../images/image\ 212.png');
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+}
+.gallery-section .gallery .item:last-child .icon{
+    background: url('../images/image\ 213.png');
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+}
+.gallery-section .gallery .item h2{
+    font-family: 'Poppins';
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 36px;
+    text-transform: capitalize;
+    color: #010F52;
+}
+.gallery-section .gallery .item p{
+    font-family: 'Poppins';
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 22px;
+    text-align: center;
+    margin: 12px 0 20px 0;
+    color: #737576;
+}
+
+/* Search блок */
+
+.search-section{
+    display: flex;
+    justify-content: center;
+}
+.search-block{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 1600px;
+    background-color: #F5F5F5;
+    border-radius: 20px;
+    padding: 50px 0 50px 0;
+    overflow: hidden;
+}
+.search-block .left-side{
+    width: 28%;
+}
+.search-block .title{
+    text-align: start;
+}
+.search-block .title h2{
+    font-family: 'Poppins';
+    font-weight: 700;
+    font-size: 40px;
+    line-height: 60px;
+    text-transform: capitalize;
+}
+.search-block .title h4{
+    font-family: 'Poppins';
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 36px;
+    text-transform: capitalize;
+    margin: 20px 0 30px 0;
+}
+.search-block .title p{
+    font-family: 'Inter';
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 28px;
+    color: #343434; 
+}
+.search-block .right-side{
+    display: flex;
+    flex-direction: column;
+
+    align-items: center;
+    height: 100%;
+    width: 56%;
+}
+.search-block .search-row{
+    display: flex;
+    align-items: center;
+    width: 800px;
+    height: 100%;
+    border-radius: 11px;
+    background-color: #FFFFFF;
+}
+.search-block .search-header .lupa{
+    background-color: #010F52;
+    border-radius: 10px;
+    height: 100%;
+    display: grid;
+    place-content: center;
+}
+.search-block .search-header a{
+    color: white;
+    padding: 0 30px 0 30px;
+    font-size: 30px;
+}
+.search-block .slider{
+    display: flex;
+    margin: 65px 0 0 110px;
+}
+.view-all{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    border: 2px #243A73 dashed;
+    margin: 20px 0 40px 0;
+    cursor: pointer;
+}
+.view-all a{
+    font-family: 'Poppins';
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 30px;
+    color: #000000;
+    text-decoration: none;
+    padding-top: 8px;
+}
+.view-all i{
+    font-size: 22px;
+    margin-top: 2px;
+}
+.arrow-btns a{
+    color: #000000;
+    background: #FFFFFF;
+    border-radius: 8px; 
+    padding: 12px 26px 12px 26px;
+    font-size: 20px;
+    margin-right: 22px;
+}
+.search-block .slider-buttons-row{
+    margin: 100px 0 0 0;
+}
+.search-block .slider-buttons-row .btn{
+    background-color: #E9D5CA;
+}
+.search-block .slider-buttons-row .btn:hover{
+    background-color: #243A73;
+}
+.search-block .slider-buttons-row .btn:nth-child(3){
+    background-color: #243A73;
+}
+.search-header{
+    display: flex;
+    align-items: center;
+    width: 100%;
+    height: 60px;
+}
+.search-block .right-side .slider .item{
+    display: grid;
+    place-content: center;
+    background-color: #FFFFFF;
+    border-radius: 20px;
+    height: 320px;
+    width: 310px;
+    margin: 0 25px;
+    padding: 0 20px;
+    text-align: center;
+    font-family: 'Poppins';
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 36px;
+    color: #243A73;
+}
+.search-block .right-side .slider .item:first-child{
+    box-shadow: 6px 6px 30px 2px #D9D9D9;
+    height: 330px;
 }
