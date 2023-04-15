@@ -17,14 +17,12 @@
     color: #010F52;
 }
 .title h2{
-    font-family: 'Poppins';
     font-weight: 600;
     font-size: 48px;
     line-height: 72px;
     text-transform: capitalize;
 }
 .title h3{
-    font-family: 'Poppins';
     font-weight: 500;
     font-size: 36px;
     line-height: 64px;
@@ -32,7 +30,6 @@
     letter-spacing: -1px;
 }
 .title h4{
-    font-family: 'Poppins';
     font-weight: 600;
     font-size: 24px;
     line-height: 29px;
@@ -41,7 +38,6 @@
     color: #243A73;
 }
 .title h5{
-    font-family: 'Poppins';
     font-weight: 400;
     font-size: 20px;
     line-height: 30px;
@@ -315,7 +311,6 @@ header .content .image{
 .search-block .right-side{
     display: flex;
     flex-direction: column;
-
     align-items: center;
     height: 100%;
     width: 56%;
@@ -326,6 +321,7 @@ header .content .image{
     width: 800px;
     height: 100%;
     border-radius: 11px;
+    margin-right: 15px;
     background-color: #FFFFFF;
 }
 .search-block .search-header .lupa{
@@ -334,7 +330,6 @@ header .content .image{
     height: 100%;
     display: grid;
     place-content: center;
-    margin-left: 15px;
 }
 .search-block .search-header a{
     color: white;
@@ -416,23 +411,19 @@ header .content .image{
     box-shadow: 6px 6px 30px 2px #D9D9D9;
     height: 330px;
 }
-.search-block button{
+.search-block select{
     height: 54px;
     width: 180px;
     background: none;
     border: none;
     border-right: 2px solid #737576;
-    font-family: 'Poppins';
     font-weight: 500;
     font-size: 16px;
     color: #737576;
-    padding: 0 15px 0 30px;
-    margin-right: 40px;
+    padding: 0 0 0 30px;
     cursor: pointer;
-}
-.search-block button i{
-    padding-left: 30px;
-    font-size: 18px;
+    appearance: none;
+    outline: none;
 }
 .search-block input, .search-block input:checked{
     border: none;
@@ -440,6 +431,7 @@ header .content .image{
     width: 68%;
     font-size: 16px;
     font-weight: 500;
+    margin-left: 40px;
 }
 .search-block input::placeholder{
     font-family: 'Poppins';
@@ -447,31 +439,14 @@ header .content .image{
     font-size: 16px;
     color: #737576;
 }
-.search-block .category-menu{
+.category-menu{
+    display: flex;
     position: relative;
-    display: inline-block;
 }
-.dropdown-content{
-    display: none;
+.category-menu::after{
+    content: url(../images/arrowdown.png);
     position: absolute;
-    background-color: #F5F5F5;
-    min-width: 160px;
-    overflow: auto;
-    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-    z-index: 1;
-    border-radius: 11px;
+    top: 50%;
+    right: 10px;
+    transform: translate(-50%, -50%);
 }
-.search-block .search-header .dropdown-content a{
-    color: #343434;
-    font-size: 20px;
-    padding: 6px 16px;
-    text-decoration: none;
-    display: block;
-    transition: .2s;
-}
-.search-block .search-header .category-menu .dropdown-content a:hover{
-    background-color: #737576;
-    color: #FFFFFF;
-    transition: .2;
-}
-.show {display: block;}
