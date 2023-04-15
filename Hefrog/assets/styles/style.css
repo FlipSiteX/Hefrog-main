@@ -334,6 +334,7 @@ header .content .image{
     height: 100%;
     display: grid;
     place-content: center;
+    margin-left: 15px;
 }
 .search-block .search-header a{
     color: white;
@@ -415,3 +416,62 @@ header .content .image{
     box-shadow: 6px 6px 30px 2px #D9D9D9;
     height: 330px;
 }
+.search-block button{
+    height: 54px;
+    width: 180px;
+    background: none;
+    border: none;
+    border-right: 2px solid #737576;
+    font-family: 'Poppins';
+    font-weight: 500;
+    font-size: 16px;
+    color: #737576;
+    padding: 0 15px 0 30px;
+    margin-right: 40px;
+    cursor: pointer;
+}
+.search-block button i{
+    padding-left: 30px;
+    font-size: 18px;
+}
+.search-block input, .search-block input:checked{
+    border: none;
+    outline: none;
+    width: 68%;
+    font-size: 16px;
+    font-weight: 500;
+}
+.search-block input::placeholder{
+    font-family: 'Poppins';
+    font-weight: 500;
+    font-size: 16px;
+    color: #737576;
+}
+.search-block .category-menu{
+    position: relative;
+    display: inline-block;
+}
+.dropdown-content{
+    display: none;
+    position: absolute;
+    background-color: #F5F5F5;
+    min-width: 160px;
+    overflow: auto;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+    border-radius: 11px;
+}
+.search-block .search-header .dropdown-content a{
+    color: #343434;
+    font-size: 20px;
+    padding: 6px 16px;
+    text-decoration: none;
+    display: block;
+    transition: .2s;
+}
+.search-block .search-header .category-menu .dropdown-content a:hover{
+    background-color: #737576;
+    color: #FFFFFF;
+    transition: .2;
+}
+.show {display: block;}
