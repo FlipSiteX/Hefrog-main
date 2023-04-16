@@ -670,7 +670,7 @@ header .content .image{
     width: 1600px;
     background-color: #F5F5F5;
     border-radius: 20px;
-    padding: 50px 0 50px 0;
+    padding-top: 50px;
     margin-top: 120px;
     overflow: hidden;
 }
@@ -683,6 +683,8 @@ header .content .image{
     display: flex;
     justify-content: space-around;
     margin-top: 30px;
+    height: 450px;
+    width: 100%;
 }
 .ingenious-section .content .info{
     margin-left: 10px;
@@ -700,9 +702,10 @@ header .content .image{
     font-weight: 400;
     font-size: 20px;
     line-height: 30px;
+    margin-left: 30px;
 }
 .ingenious-section .btns-row{
-    margin-top: 90px;
+    margin: 70px 0 0 48px;
 }
 .ingenious-section .btns-row a{
     text-decoration: none;
@@ -716,4 +719,30 @@ header .content .image{
     margin-top: 100px;
     box-shadow: 6px 6px 30px 6px rgba(0, 0, 0, 0.25);
     transition: .2s;
+}
+.ingenious-section .btns-row a:hover{
+    box-shadow: 4px 4px 24px 4px rgba(0, 0, 0, 0.5);
+    transition: .2s;
+}
+.ingenious-section .btns-row a:last-child{
+    background-color: transparent;
+    box-shadow: none;
+    color: #0E538C;
+    border: 1px #0E538C solid;
+    margin-left: 70px;
+    transition: .2s;
+}
+.ingenious-section .btns-row a:last-child:hover{
+    background-color: #0E538C;
+    box-shadow: none;
+    color: white;
+    border: 1px #0E538C solid;
+    margin-left: 70px;
+    transition: .2s;
+}
+.ingenious-section .content .computer{
+    position: relative;
+    top: -110px;
+    right: -66px;
+    height: 504px;
 }
