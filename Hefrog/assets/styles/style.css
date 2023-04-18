@@ -470,9 +470,15 @@ input[name='i']{
     margin-left: calc(-60% - 120px);
     box-shadow: 6px 6px 30px 2px #D9D9D9;
 }
+#i4:checked ~ .m3{
+    opacity: 0.6;
+}
 #i5:checked ~ .m5{
     margin-left: calc(-80% - 160px);
     box-shadow: 6px 6px 30px 2px #D9D9D9;
+}
+#i5:checked ~ .m3, #i5:checked ~ .m2{
+    opacity: 0.6;
 }
 .search-block select{
     height: 54px;
