@@ -1068,7 +1068,29 @@ footer #footer-email{
     outline: none;
     margin-left: 24px;
     color: white;
+    width: 68%;
 }
 footer #footer-email::placeholder{
     color: #D8D8D8;
+}
+footer #footer-submit{
+    position: relative;
+    right: -2px;
+    background: url(../images/Primary\ fill.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-color: #64A5CA;
+    border: none;
+    width: 60px;
+    height: 56px;
+    cursor: pointer;
+    border-radius: 0 10px 10px 0;
+}
+footer #footer-submit:active{
+    background-color: #2a7abb;
+}
+footer form{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
 }
