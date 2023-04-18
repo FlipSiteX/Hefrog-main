@@ -423,6 +423,7 @@ header .content .image{
     cursor: pointer;
     appearance: none;
     outline: none;
+    z-index: 1;
 }
 .search-block input, .search-block input:checked{
     border: none;
@@ -448,6 +449,7 @@ header .content .image{
     top: 50%;
     right: 10px;
     transform: translate(-50%, -50%);
+    z-index: 0;
 }
 
 /* RESEARCH блок */
@@ -800,7 +802,7 @@ header .content .image{
 /* RELATIONSHIP блок */
 
 .relationship-section{
-    width: 1400px;
+    width: 1500px;
     margin-top: 150px;
 }
 .relationship-section .content{
@@ -809,7 +811,7 @@ header .content .image{
 .relationship-section .content img{
     position: relative;
     top: -55px;
-    right: -30px;
+    right: 46px;
 }
 .relationship-section .info .title{
     text-align: start;
@@ -835,4 +837,238 @@ header .content .image{
 .relationship-section a:hover{
     box-shadow: 4px 4px 24px 4px rgba(0, 0, 0, 0.5);
     transition: .2s;
+}
+
+/* BLOGS блок */
+
+.blogs-section{
+    width: 1500px;
+    margin-bottom: 90px;
+}
+.blogs-section .title{
+    text-align: start;
+}
+.blogs-section .title h4{
+    font-size: 27px;
+    color: rgba(0, 0, 0, 0.49);
+    margin: 10px 0 30px 0;
+}
+.blogs-section .posts-row{
+    display: flex;
+    justify-content: space-between;
+}
+.blogs-section .post h4{
+    font-family: 'Poppins';
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 36px;
+    text-transform: capitalize;
+    color: #010F52;
+    margin: 30px 0 25px 0;
+}
+.blogs-section .post p{
+    font-family: 'Poppins';
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 22px;
+    color: #737576;
+}
+.blogs-section .mini-posts-row{
+    display: flex;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.51);
+    border-top: 1px solid rgba(0, 0, 0, 0.51);
+    margin-top: 25px;
+}
+.blogs-section .mini-post{
+    display: flex;
+    margin: 45px 0 45px 0;
+    padding: 0 25px 0 25px;
+}
+.blogs-section .mini-post:first-child{
+    padding-left: 0;
+}
+.blogs-section .mini-post:last-child{
+    padding-right: 0;
+}
+.blogs-section .mini-post:nth-child(2){
+    border-left: 1px solid rgba(0, 0, 0, 0.51);
+    border-right: 1px solid rgba(0, 0, 0, 0.51);
+}
+.blogs-section .mini-post img{
+    width: 118px;
+    height: 102px;
+}
+.blogs-section .mini-post .title{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    margin-left: 30px;
+}
+.blogs-section .mini-post .title h4{
+    font-family: 'Poppins';
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 36px;
+    text-transform: capitalize;
+    color: #010F52;
+    margin: 0;
+}
+.blogs-section .mini-post .title p{
+    font-family: 'Poppins';
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 22px;
+    color: #737576;
+}
+
+/* SUBSCRIBE блок */
+
+.subscribe-section{
+    width: 1600px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: #F5F5F5;
+    border-radius: 20px;
+    margin-bottom: 90px;
+}
+.subscribe-section .info .title{
+    text-align: start;
+}
+.subscribe-section .info .title p{
+    font-family: 'Inter';
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 26px;
+    color: #343434;
+    margin-top: 5px;
+}
+.subscribe-section form{
+    display: flex;
+    margin-top: 50px;
+    height: 70px;
+}
+.subscribe-section #email{
+    width: 470px;
+    border-radius: 11px;
+    border: none;
+    padding: 0 20px 0 30px;
+    font-family: 'Inter';
+    font-weight: 400;
+    font-size: 18px;
+    color: #000000;
+}
+.subscribe-section #email::placeholder{
+    font-family: 'Inter';
+    font-weight: 400;
+    font-size: 18px;
+    color: #737576;
+}
+.subscribe-section #email:focus{
+    outline: none;
+}
+.subscribe-section #submit{
+    margin-left: 60px;
+    padding: 0 70px 0 70px;
+    border-radius: 8px;
+    background-color: #243A73;
+    border: none;
+    color: #FFFFFF;
+    font-size: 24px;
+    border: 1px solid transparent;
+}
+.subscribe-section #submit:hover{
+    background: linear-gradient(to bottom, #243A73, #0E538C);
+}
+.subscribe-section #submit:active{
+    background: white;
+    color: #243A73;
+    border: 1px solid #243A73;
+}
+
+/* FOOTER */
+
+footer{
+    display: flex;
+    justify-content: space-around;
+    padding: 90px 0 90px 0;
+    background: url(../images/Background.png), #243A73;;
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 100%;
+    color: white;
+    text-decoration: none;
+}
+footer a{
+    color: white;
+    text-decoration: none;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 300;
+    font-size: 14px;
+    line-height: 22px;
+}
+footer .column{
+    display: flex;
+    flex-direction: column;
+}
+footer .column a{
+    margin-top: 16px;
+}
+footer .column a:hover{
+    text-decoration: underline;
+}
+footer h2{
+    font-family: 'Inter';
+    font-weight: 600;
+    font-size: 36px;
+    line-height: 56px;
+    text-transform: capitalize;
+}
+footer p{
+    font-family: 'Inter';
+    font-weight: 300;
+    font-size: 14px;
+    line-height: 22px;
+    margin-top: 15px;
+}
+footer .icons-row{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 40px;
+    width: 200px;
+}
+footer .flogo .icons-row a{
+    font-size: 22px;
+    margin: 0;
+}
+footer h5{
+    font-family: 'Inter';
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 26px;
+    text-transform: capitalize;
+    margin-bottom: 8px;
+}
+footer .mid{
+    margin-top: 20px;
+}
+footer .subscribe .input{
+    display: flex;
+    align-items: center;
+    width: 310px;
+    height: 56px;
+    border: 1px solid white;
+    border-radius: 10px;
+    margin-top: 20px;
+}
+footer #footer-email{
+    background: none;
+    border: none;
+    outline: none;
+    margin-left: 24px;
+    color: white;
+}
+footer #footer-email::placeholder{
+    color: #D8D8D8;
 }
