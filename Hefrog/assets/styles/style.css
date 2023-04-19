@@ -177,6 +177,14 @@ header .content .slides .slide{
     border-radius: 5px;
     transition: .2s;
 }
+#r1:checked ~ .slider-buttons-row label:nth-child(1),
+#r2:checked ~ .slider-buttons-row label:nth-child(2),
+#r3:checked ~ .slider-buttons-row label:nth-child(3),
+#r4:checked ~ .slider-buttons-row label:nth-child(4),
+#r5:checked ~ .slider-buttons-row label:nth-child(5){
+    background-color: #243A73;
+    transform: scale(1.2, 1);
+}
 .slider-buttons-row label:hover{
     background-color: #243A73;
     transform: scale(1.2, 1);
@@ -346,6 +354,7 @@ input[name='r'] {
     color: #343434; 
 }
 .search-block .right-side{
+    position: relative;
     display: flex;
     flex-direction: column;
     height: 100%;
@@ -414,6 +423,10 @@ input[name='r'] {
     margin-top: 100px;
     display: flex;
     justify-content: center;
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translate(-50%, -50%);
 }
 .search-header{
     display: flex;
@@ -448,6 +461,14 @@ input[name='r'] {
     transition: .2s;
 }
 .search-slider-buttons-row label:hover{
+    background-color: #243A73;
+    transform: scale(1.2, 1);
+}
+#i1:checked ~ .search-slider-buttons-row label:nth-child(1),
+#i2:checked ~ .search-slider-buttons-row label:nth-child(2),
+#i3:checked ~ .search-slider-buttons-row label:nth-child(3),
+#i4:checked ~ .search-slider-buttons-row label:nth-child(4),
+#i5:checked ~ .search-slider-buttons-row label:nth-child(5){
     background-color: #243A73;
     transform: scale(1.2, 1);
 }
