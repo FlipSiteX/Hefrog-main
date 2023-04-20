@@ -737,7 +737,6 @@ input[name='i']{
 .stepahead-section .info a{
     text-decoration: none;
     color: white;
-    font-family: 'Poppins';
     font-weight: 500;
     font-size: 24px;
     background: #243A73;
@@ -1264,4 +1263,245 @@ footer form{
 .rfq-content .circ{
     top: 450px;
     left: -20px;
+}
+
+/* SERVIES BLOCK */
+
+.our-servies-section{;
+    width: 1650px;
+    background: linear-gradient(180deg, #F5F5F5 0%, rgba(245, 245, 245, 0) 100%);
+    border-radius: 20px;
+    margin-top: 200px;
+    padding: 40px 0 90px 0;
+}
+.our-servies-section h3{
+    font-weight: 700;
+    color: #0E538C;
+}
+.our-servies-section .gallery{
+    display: flex;
+    justify-content: center;
+    margin: 40px 0 0 50px;
+}
+.our-servies-section .grid-mini-items{
+    display: grid;
+    place-items: center;
+    width: 1200px;
+    grid-template-columns: 320px 320px 320px;
+    grid-template-rows: 1fr 1fr;
+    gap: 40px 80px;
+    margin-left: 50px;
+}
+.our-servies-section .grid-mini-items p{
+    width: 95%;
+}
+.our-servies-section .gradient-block{
+    display: grid;
+    place-content: center;
+    place-items: center;
+    background: url(../images/gradient.png);
+    background-size: cover;
+    width: 380px;
+    border-radius: 12px;
+    text-align: center;
+    color: #FFFFFF;
+}
+.our-servies-section .gradient-block h4{
+    font-weight: 700;
+    font-size: 32px;
+    line-height: 48px;
+}
+.our-servies-section .gradient-block p{
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 24px;
+    margin: 27px 0 40px 0;
+}
+.our-servies-section .mini-item:nth-child(1) .icon{
+    background: url('../images/image\ 2.png');
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+}
+.our-servies-section .mini-item:nth-child(2) .icon{
+    background: url('../images/image\ 3.png');
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+}
+.our-servies-section .mini-item:nth-child(3) .icon{
+    background: url('../images/image\ 4.png');
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+}
+.our-servies-section .mini-item:nth-child(4) .icon{
+    background: url('../images/image\ 3(1).png');
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+}
+.our-servies-section .mini-item:nth-child(5) .icon{
+    background: url('../images/image\ 2.png');
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+}
+.our-servies-section .mini-item:nth-child(6) .icon{
+    background: url('../images/image\ 2.png');
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+}
+.our-servies-section .mini-item{
+    background-color: #FFFFFF;
+}
+.our-servies-section .mini-item h2{
+    color: #0E538C;
+    font-weight: 700;
+}
+.our-servies-section .mini-item .icon{
+    height: 50%;
+}
+
+
+.new-era-section{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 140px;
+}
+.new-era-section h2{
+    font-weight: 600;
+    font-size: 48px;
+    line-height: 72px;
+    text-align: center;
+    text-transform: capitalize;
+    color: #010F52;
+}
+.new-era-section h5{
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 30px;
+    color: rgba(0, 0, 0, 0.44);
+    text-align: center;
+    margin: 40px 0 80px 0;
+}
+.new-era-section .grid-rectangle-items{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    gap: 50px;
+}
+.new-era-section .rect-item{
+    display: flex;
+    align-items: center;
+    background: #FFFFFF;
+    box-shadow: 0px 10px 30px rgba(38, 57, 237, 0.16);
+    border-radius: 14px;
+    width: 600px;
+    height: 200px;
+}
+.new-era-section .last-rect{
+    margin-top: 74px;
+}
+.new-era-section .rect-item .icon{
+    width: 70px;
+    height: 70px;
+    margin: 0 40px 30px 30px;
+}
+.new-era-section .rect-item .text{
+    width: 72%;
+}
+.new-era-section .rect-item:nth-child(1) .icon{
+    background: url('../images/image\ 248.png');
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+}
+.new-era-section .rect-item:nth-child(2) .icon{
+    background: url('../images/image\ 249.png');
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+}
+.new-era-section .rect-item:nth-child(3) .icon{
+    background: url('../images/image\ 251.png');
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+}
+.new-era-section .grid-rectangle-items .rect-item:nth-child(4) .icon{
+    background: url('../images/image\ 250.png');
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+}
+.new-era-section .rect-item:nth-child(4) .icon{
+    background: url('../images/image\ 252.png');
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+}
+.new-era-section .rect-item h2{
+    font-family: 'Inter';
+    text-align: left;
+    text-transform: none;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 26px;
+    color: #0A093D;
+    margin-bottom: 15px;
+}
+
+/* SMART QUOTE BLOCK */
+
+.smart-quote-section{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    width: 1600px;
+    background: #F5F5F5;
+    border-radius: 20px;
+    padding: 50px 0 50px 0;
+    margin-top: 15px;
+}
+.smart-quote-section img{
+    width: 380px;
+    margin-top: 20px;
+}
+.smart-quote-section .text{
+    width: 50%;
+}
+.smart-quote-section .btn{
+    margin-top: 50px;
+}
+.smart-quote-section a{
+    text-decoration: none;
+    color: white;
+    font-weight: 500;
+    font-size: 24px;
+    background: #243A73;
+    border-radius: 8px;
+    padding: 20px 70px;
+    box-shadow: 6px 6px 30px 6px rgba(0, 0, 0, 0.25);
+    transition: .2s;
+}
+.smart-quote-section a:hover{
+    box-shadow: 4px 4px 24px 4px rgba(0, 0, 0, 0.5);
+    transition: .2s;
+}
+.smart-quote-section h2{
+    font-weight: 600;
+    font-size: 48px;
+    line-height: 72px;
+    text-transform: capitalize;
+    color: #010F52;
+}
+.smart-quote-section p{
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 30px;
+    color: #4E4E4E;
+    margin-top: 15px;
 }
