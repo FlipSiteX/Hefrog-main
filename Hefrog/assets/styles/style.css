@@ -1459,7 +1459,7 @@ footer form{
 .smart-quote-section{
     display: flex;
     align-items: center;
-    justify-content: space-around;
+    justify-content: center;
     width: 1600px;
     background: #F5F5F5;
     border-radius: 20px;
@@ -1469,9 +1469,7 @@ footer form{
 .smart-quote-section img{
     width: 380px;
     margin-top: 20px;
-}
-.smart-quote-section .text{
-    width: 50%;
+    margin-right: 200px;
 }
 .smart-quote-section .btn{
     margin-top: 50px;
@@ -1504,4 +1502,135 @@ footer form{
     line-height: 30px;
     color: #4E4E4E;
     margin-top: 15px;
+}
+
+/* HOW IT WORK BLOCK */ 
+
+.howit-section{
+    margin-top: 80px;
+}
+.howit-section h5{
+    margin-top: 10px;
+}
+.howit-section .road{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1.4fr 1fr 1.7fr 1fr 1.4fr 1fr;
+    margin-top: 120px;
+}
+.howit-section .item{
+    display: flex;
+    justify-content: center;
+}
+.howit-section .item:last-child{
+    margin-left: 30px;
+}
+.howit-section .item .text{
+    margin: 35px 0 0 90px;
+}
+.howit-section .item h4{
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 36px;
+    text-transform: capitalize;
+    color: #010F52;
+}
+.howit-section .item p{
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    color: #4E4E4E;
+    margin-top: 10px;
+}
+.dashed-line{
+    position: relative;
+}
+.dashed-line img{
+    position: absolute;
+}
+.dashed-line.d1 img{
+    top: 40px;
+    right: -90px;
+}
+.dashed-line.d2 img{
+    top: -65px;
+    right: 0;
+}
+.dashed-line.d3 img{
+    top: 72px;
+    right: 0;
+}
+
+/* Sustainable Services BLOCK */
+
+.sustain-section{
+    display: grid;
+    place-content: center;
+    background: url(../images/Weather\ report.png);
+    background-position: center;
+    background-size: 120%;
+    margin-top: 150px;
+    padding-bottom: 200px;
+    width: 1420px;
+}
+.sustain-section .title h5{
+    margin-top: 5px;
+}
+.sustain-section .grid-mini-items{
+    display: grid;
+    grid-template-columns: 380px 380px 380px;
+    gap: 70px 100px;
+    margin-top: 90px;
+}
+.sustain-section .grid-mini-items .mini-item{
+    height: 330px;
+    border: 0.5px solid #000000;
+    border-radius: 20px;
+    box-shadow: none;
+    background: #FFFFFF;
+}
+.sustain-section .mini-item .icon{
+    height: 50%;
+}
+.sustain-section .mini-item:nth-child(1) .icon{
+    background: url(../images/image\ 208.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+}
+.sustain-section .mini-item:nth-child(2) .icon{
+    background: url(../images/lampa.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+}
+.sustain-section .mini-item:nth-child(3) .icon{
+    background: url(../images/tank.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+}
+.sustain-section .mini-item:nth-child(4) .icon{
+    background: url(../images/dollar.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+}
+.sustain-section .mini-item:nth-child(5) .icon{
+    background: url(../images/truba.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+}
+.sustain-section .mini-item:nth-child(6) .icon{
+    background: url(../images/gachi.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+}
+
+/* RFQ Footer */
+
+.rfq-footer{
+    margin-top: 60px;
 }
