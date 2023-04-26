@@ -1844,3 +1844,31 @@ footer form{
     color: #737576;
     margin-top: 10px;
 }
+
+/* TOUCH BLOCK */
+
+.touch-section{
+    width: 100%;
+    height: 1020px;
+    margin-top: 110px;
+    background: url(../images/pngwing\ 1.png), #243A73;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    padding: 100px 0 150px 0;
+}
+.touch-section .content{
+    display: flex;
+}
+.touch-section form{
+    width: 50%;
+}
+.touch-section .right-side{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.touch-section .title h2{
+    color: white;
+    text-align: start;
+}
