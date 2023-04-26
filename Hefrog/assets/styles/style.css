@@ -1849,19 +1849,79 @@ footer form{
 
 .touch-section{
     width: 100%;
-    height: 1020px;
     margin-top: 110px;
     background: url(../images/pngwing\ 1.png), #243A73;
     background-size: contain;
     background-repeat: no-repeat;
     background-position: center;
-    padding: 100px 0 150px 0;
+    background-position-y: 140px;
+    padding: 100px 0 90px 0;
 }
 .touch-section .content{
     display: flex;
+    justify-content: space-around;
+    align-items: center;
 }
 .touch-section form{
-    width: 50%;
+    display: flex;
+    flex-direction: column;
+    width: 44%;
+    margin-left: 100px;
+}
+.touch-section input{
+    height: 70px;
+    border-radius: 11px;
+    border: none;
+    margin-top: 50px;
+    padding: 0 16px 0 40px;
+    font-size: 18px;
+}
+.touch-section input:focus{
+    outline: none;
+}
+.touch-section input:first-child{
+    margin: 0;
+}
+.touch-section #note{
+    height: 200px;
+    margin-top: 50px;
+    border-radius: 11px;
+    border: none;
+    font-size: 18px;
+    padding: 50px 30px 16px 40px;
+}
+.touch-section #note:focus{
+    outline: none;
+}
+.touch-section .double-input{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 50px;
+}
+.touch-section .double-input input{
+    width: 48%;
+    margin: 0;
+}
+.touch-section button{
+    height: 80px;
+    width: 180px;
+    box-shadow: 6px 6px 30px 6px rgba(0, 0, 0, 0.25);
+    border-radius: 8px;
+    margin-top: 50px;
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 36px;
+    color: #243A73;
+    border: none;
+    cursor: pointer;
+    transition: .2s;
+}
+.touch-section button:hover{
+    background-color: #243A73;
+    color: white;
+    border: 1px solid white;
+    transition: .2s;
 }
 .touch-section .right-side{
     display: flex;
