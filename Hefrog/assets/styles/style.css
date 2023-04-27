@@ -1944,6 +1944,9 @@ body{
     flex-direction: column;
     align-items: center;
 }
+.profile-section .title{
+    margin-left: 50px;
+}
 .profile-section .title h2{
     font-weight: 400;
     font-size: 32px;
@@ -1956,10 +1959,69 @@ body{
     width: 1800px;
     display: flex;
     justify-content: space-between;
+    margin-top: 30px;
+}
+.profile-section .profile-header label{
+    cursor: pointer;
 }
 .profile-section .profile-header .icons-row{
     display: flex;
+    align-items: center;
 }
-.profile-section .profile-header .search input{
+.profile-section .profile-header .icons-row i:last-child{
+    margin: 0 50px;
+}
+.profile-section .profile-header .search-box input{
     display: none;
 }
+.profile-section i{
+    font-size: 34px;
+    color: black;
+}
+.profile-header .avatar-circle{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 50px;
+    width: 50px;
+    background: linear-gradient(#243A73, #8e99b8c8);
+    border-radius: 50%;
+    margin-left: 50px;
+}
+.profile-section .avatar-circle img{
+    position: absolute;
+    right: -18px;
+    bottom: 5px;
+}
+.profile-section .avatar-circle .white-circle{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 42px;
+    width: 42px;
+    background: white;
+    border-radius: 50%;
+}
+.profile-section .avatar-circle .white-circle .img{
+    width: 40px;
+    height: 40px;
+    background: url(https://sun9-79.userapi.com/impg/lmoSEeeQiT7HxI2ZRPJbKvmRADgfxalsvChfKA/SvV86gXVp_M.jpg?size=897x1600&quality=95&sign=92d09ac69eb2a6ce4d1a303df4aa0bbd&type=album);
+    background-size: cover;
+    border-radius: 50%;
+}
+.profile-section .status-row{
+    display: flex;
+    align-items: center;
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 22px;
+    text-transform: capitalize;
+    color: rgba(0, 0, 0, 0.36);
+    margin-top: 40px;
+}
+.profile-section .status-row i{
+    color: rgba(0, 0, 0, 0.36);
+    margin: 0 10px 0 50px;
+}
+
