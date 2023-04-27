@@ -1944,8 +1944,16 @@ body{
     flex-direction: column;
     align-items: center;
 }
+.profile-section{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 100vh;
+    position: relative;
+}
 .profile-section .title{
     margin-left: 50px;
+    transition: .4s;
 }
 .profile-section .title h2{
     font-weight: 400;
@@ -1954,9 +1962,10 @@ body{
     text-transform: capitalize;
     color: #000000;
     text-align: start;
+    margin-left: 70px;
 }
 .profile-section .profile-header{
-    width: 1800px;
+    width: 100vw;
     display: flex;
     justify-content: space-between;
     margin-top: 30px;
@@ -1967,11 +1976,9 @@ body{
 .profile-section .profile-header .icons-row{
     display: flex;
     align-items: center;
+    margin-right: 80px;
 }
-.profile-section .profile-header .icons-row i:last-child{
-    margin: 0 50px;
-}
-.profile-section .profile-header .search-box input{
+.profile-section .profile-header .icon input{
     display: none;
 }
 .profile-section i{
@@ -1983,11 +1990,10 @@ body{
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 50px;
-    width: 50px;
+    height: 52px;
+    width: 52px;
     background: linear-gradient(#243A73, #8e99b8c8);
     border-radius: 50%;
-    margin-left: 50px;
 }
 .profile-section .avatar-circle img{
     position: absolute;
@@ -1998,14 +2004,14 @@ body{
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 42px;
-    width: 42px;
+    height: 44px;
+    width: 44px;
     background: white;
     border-radius: 50%;
 }
 .profile-section .avatar-circle .white-circle .img{
-    width: 40px;
-    height: 40px;
+    width: 42px;
+    height: 42px;
     background: url(https://sun9-79.userapi.com/impg/lmoSEeeQiT7HxI2ZRPJbKvmRADgfxalsvChfKA/SvV86gXVp_M.jpg?size=897x1600&quality=95&sign=92d09ac69eb2a6ce4d1a303df4aa0bbd&type=album);
     background-size: cover;
     border-radius: 50%;
@@ -2019,9 +2025,156 @@ body{
     text-transform: capitalize;
     color: rgba(0, 0, 0, 0.36);
     margin-top: 40px;
+    transition: .4s;
+    align-self: flex-start;
 }
 .profile-section .status-row i{
     color: rgba(0, 0, 0, 0.36);
-    margin: 0 10px 0 50px;
+    margin: 0 10px 0 120px;
+    font-size: 24px;
+}
+.profile-section .icon{
+    width: 40px;
+    margin: 0 24px;
+}
+.profile-section .profile-ava{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 60px;
+    border-radius: 50%;
+    margin-left: 20px;
 }
 
+
+.menu{
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 80px;
+    background: #2A3551;
+    border-radius: 0 10px 10px 0;
+    z-index: 55;
+    transition: .4s;
+}
+.menu i{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    margin-top: 60px;
+    cursor: pointer;
+    height: 42px;
+    width: 42px;
+}
+.menu .menu-head .menu-title, .menu .nav-bar{
+    display: none;
+    width: 100%;
+}
+.menu-title h2{
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 30px;
+    text-transform: capitalize;
+    color: #FFFFFF;
+    
+}
+.profile-section .menu-head{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    width: 75%;
+}
+.profile-section .menu .nav-bar a{
+    color: white;
+    text-decoration: none;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 30px;
+    text-transform: capitalize;
+}
+.profile-section .menu .nav-bar .url{
+    display: flex;
+    align-items: center;
+    height: 64px;
+    transition: .2s;
+    width: 90%;
+    border-radius: 0px 36px 36px 0px;
+    margin: 8px 0;
+}
+.profile-section .menu .nav-bar .url:first-child{
+    margin-top: 30px;
+}
+.profile-section .menu .nav-bar .url:hover{
+    background: #FB5B01;
+    transition: .2s;
+}
+.profile-section .menu .nav-bar .url::before{
+    margin: 6px 28px 0 40px;
+}
+.profile-section .menu .nav-bar .url:first-child::before{
+    content: url(../images/rectang.png);
+}
+.profile-section .menu .nav-bar .url:nth-child(2)::before{
+    content: url(../images/Groupsc.png);
+}
+.profile-section .menu .nav-bar .url:nth-child(3)::before{
+    content: url(../images/Vectortime.png);
+}
+.profile-section .menu .nav-bar .url:nth-child(4)::before{
+    content: url(../images/iconproduct.png);
+}
+.profile-section .menu .nav-bar .url:nth-child(5)::before{
+    content: url(../images/iconproduct.png);
+}
+.profile-section .menu .nav-bar .url:nth-child(6)::before{
+    content: url(../images/iconproduct.png);
+}
+.profile-section .menu .nav-bar .url:last-child::before{
+    content: url(../images/iconproduct.png);
+}
+
+
+#burger:checked ~ .profile-section .menu{
+    width: 340px;
+    transition: .4s;
+}
+#burger:checked ~ .profile-section .title, #burger:checked ~ .profile-section .status-row{
+    padding-left: 260px;
+    transition: .4s;
+}
+#burger:checked ~ .profile-section .menu .menu-head i{
+    margin: 0;
+}
+#burger:checked ~ .profile-section .menu .menu-head{
+    margin-top: 60px;
+}
+#burger:checked ~ .profile-section .menu .menu-head .menu-title{
+    display: block;
+    transition: .4s;
+}
+#burger:checked ~ .profile-section .menu .nav-bar{
+    display: flex;
+    flex-direction: column;
+}
+
+
+
+.profile-main .profile-section .gradient{
+    background: url(../images/Rectangle\ 8374.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 1600px;
+    height: 280px;
+    border-radius: 20px;
+    margin-top: 50px;
+    position: relative;
+}
+.profile-main .profile-section .gradient a{
+    position: absolute;
+    right: 0;
+}
