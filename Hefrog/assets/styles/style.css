@@ -1944,11 +1944,13 @@ body{
     flex-direction: column;
     align-items: center;
 }
+.profile-main{
+    width: 1870px;
+}
 .profile-section{
     display: flex;
     flex-direction: column;
     align-items: center;
-    height: 100vh;
     position: relative;
 }
 .profile-section .title{
@@ -2052,6 +2054,7 @@ body{
     display: flex;
     flex-direction: column;
     align-items: center;
+    cursor: pointer;
     top: 0;
     left: 0;
     height: 100%;
@@ -2067,7 +2070,7 @@ body{
     align-items: center;
     color: white;
     margin-top: 60px;
-    cursor: pointer;
+
     height: 42px;
     width: 42px;
 }
@@ -2081,7 +2084,6 @@ body{
     line-height: 30px;
     text-transform: capitalize;
     color: #FFFFFF;
-    
 }
 .profile-section .menu-head{
     display: flex;
@@ -2096,6 +2098,7 @@ body{
     font-size: 20px;
     line-height: 30px;
     text-transform: capitalize;
+    width: 100%;
 }
 .profile-section .menu .nav-bar .url{
     display: flex;
@@ -2176,5 +2179,166 @@ body{
 }
 .profile-main .profile-section .gradient a{
     position: absolute;
-    right: 0;
+    display: grid;
+    place-items: center;
+    top: 40px;
+    right: 40px;
+    width: 160px;
+    height: 60px;
+    background: rgba(217, 217, 217, 0.3);
+    backdrop-filter: blur(2px);
+    border-radius: 10px;
+    color: white;
+    text-decoration: none;
+    transition: .2s;
+}
+.profile-main .profile-section .gradient a:hover{
+    background: rgba(217, 217, 217, 0.5);
+    backdrop-filter: blur(4px);
+    transition: .2s;
+}
+
+
+.team-content{
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+    height: 70vh;
+}
+.team-content .team-card{
+    position: relative;
+    width: 320px;
+}
+.team-card .card{
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 730px;
+    width: 380px;
+    top: -100px;
+    box-shadow: 10px 10px 30px rgba(0, 0, 0, 0.1);
+    background: white;
+    border-radius: 20px;
+}
+.team-content .card .big-ava{
+    width: 180px;
+    height: 180px;
+    background: url(https://sun3.tele2-nn.userapi.com/impg/lmoSEeeQiT7HxI2ZRPJbKvmRADgfxalsvChfKA/SvV86gXVp_M.jpg?size=897x1600&quality=95&sign=92d09ac69eb2a6ce4d1a303df4aa0bbd&type=album);
+    background-size: cover;
+    border-radius: 50%;
+    margin: 30px 0 15px 0;
+}
+.team-content .card h3{
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 30px;
+    text-transform: capitalize;
+}
+.team-content .card p{
+    align-self: flex-start;
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 22px;
+    text-transform: capitalize;
+    color: rgba(0, 0, 0, 0.36);
+    margin: 12px 0;
+    display: flex;
+    align-items: center;
+}
+.team-content button{
+    width: 300px;
+    height: 56px;
+    border: none;
+    border-radius: 6px;
+    font-weight: 600;
+    font-size: 15px;
+    line-height: 22px;
+    text-transform: capitalize;
+    cursor: pointer;
+    transition: .2s;
+}
+.team-content button{
+    transition: .2s;
+}
+#up-doc{
+    color: white;
+    background: #243A73;
+    margin: 60px 0 30px 0;
+    border: 1px solid rgba(0, 0, 0, 0.25);
+}
+#prod-det{
+    color: #243A73;
+    background: white;
+    border: 1px solid rgba(0, 0, 0, 0.25);
+}
+#prod-det:hover, #up-doc:hover{
+    background: rgba(0, 0, 0, 0.25);
+    color: white;
+    transition: .2s;
+}
+
+#first{
+    margin-top: 28px;
+}
+.team-content .team-card .card p::before{
+    display: flex;
+    justify-content: center;
+    width: 40px;
+    margin-right: 12px;
+}
+#first::before{
+    content: url(../images/🦆\ icon\ _Enterprise_.png);
+}
+#second::before{
+    content: url(../images/Vector\ \(1\).png);
+}
+#three::before{
+    content: url(../images/Group12.png);
+}
+#four::before{
+    content: url(../images/🦆\ icon\ _Email_.png);
+}
+.team-content .url-row{
+    margin: 50px 0 70px 0;
+}
+.team-content .url-row a{
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 30px;
+    text-transform: capitalize;
+    color: #243A73;
+    text-decoration: none;
+    border-bottom: 4px solid #243A73;
+    padding-bottom: 5px;
+}
+.team-content .url-row a:last-child{
+    margin-left: 57px;
+    font-weight: 400;
+    color: rgba(0, 0, 0, 0.25);
+    border: none;
+}
+.team-content .description{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr;
+    gap: 30px 200px;
+    background: #F5F5F5;
+    border-radius: 10px;
+    padding: 50px 150px 50px 50px;
+}
+.team-content .description h4{
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 30px;
+    text-transform: capitalize;
+    color: rgba(0, 0, 0, 0.36);
+}
+.team-content .description h5{
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 30px;
+    text-transform: capitalize;
+    color: #243A73;
+    margin-top: 2px;
 }
