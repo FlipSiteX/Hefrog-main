@@ -1944,9 +1944,6 @@ body{
     flex-direction: column;
     align-items: center;
 }
-.profile-main{
-    width: 1870px;
-}
 .profile-section{
     display: flex;
     flex-direction: column;
@@ -1954,7 +1951,7 @@ body{
     position: relative;
 }
 .profile-section .title{
-    margin-left: 50px;
+    margin-left: 30px;
     transition: .4s;
 }
 .profile-section .title h2{
@@ -1964,10 +1961,9 @@ body{
     text-transform: capitalize;
     color: #000000;
     text-align: start;
-    margin-left: 70px;
 }
 .profile-section .profile-header{
-    width: 100vw;
+    width: 85vw;
     display: flex;
     justify-content: space-between;
     margin-top: 30px;
@@ -1978,7 +1974,7 @@ body{
 .profile-section .profile-header .icons-row{
     display: flex;
     align-items: center;
-    margin-right: 80px;
+    margin-right: 70px;
 }
 .profile-section .profile-header .icon input{
     display: none;
@@ -2019,6 +2015,7 @@ body{
     border-radius: 50%;
 }
 .profile-section .status-row{
+    width: 85vw;
     display: flex;
     align-items: center;
     font-weight: 400;
@@ -2026,13 +2023,12 @@ body{
     line-height: 22px;
     text-transform: capitalize;
     color: rgba(0, 0, 0, 0.36);
-    margin-top: 40px;
+    margin: 40px 0 0 64px;
     transition: .4s;
-    align-self: flex-start;
 }
 .profile-section .status-row i{
     color: rgba(0, 0, 0, 0.36);
-    margin: 0 10px 0 120px;
+    margin-right: 10px;
     font-size: 24px;
 }
 .profile-section .icon{
@@ -2050,7 +2046,7 @@ body{
 
 
 .menu{
-    position: absolute;
+    position: fixed;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -2061,7 +2057,7 @@ body{
     width: 80px;
     background: #2A3551;
     border-radius: 0 10px 10px 0;
-    z-index: 55;
+    z-index: 100;
     transition: .4s;
 }
 .menu i{
@@ -2070,7 +2066,6 @@ body{
     align-items: center;
     color: white;
     margin-top: 60px;
-
     height: 42px;
     width: 42px;
 }
@@ -2092,6 +2087,8 @@ body{
     width: 75%;
 }
 .profile-section .menu .nav-bar a{
+    display: flex;
+    align-items: center;
     color: white;
     text-decoration: none;
     font-weight: 400;
@@ -2099,6 +2096,7 @@ body{
     line-height: 30px;
     text-transform: capitalize;
     width: 100%;
+    height: 100%;
 }
 .profile-section .menu .nav-bar .url{
     display: flex;
@@ -2140,11 +2138,21 @@ body{
 .profile-section .menu .nav-bar .url:last-child::before{
     content: url(../images/iconproduct.png);
 }
+#hidmen{
+    display: none;
+    position: fixed;
+    width: 100%;
+    height: 100vh;
+    z-index: 99;
+}
 
 
 #burger:checked ~ .profile-section .menu{
     width: 340px;
     transition: .4s;
+}
+#burger:checked  ~  .profile-section #hidmen{
+    display: block;
 }
 #burger:checked ~ .profile-section .title, #burger:checked ~ .profile-section .status-row{
     padding-left: 260px;
@@ -2202,7 +2210,7 @@ body{
 .team-content{
     display: flex;
     justify-content: space-around;
-    width: 100%;
+    width: 1820px;
     height: 70vh;
 }
 .team-content .team-card{
@@ -2318,27 +2326,94 @@ body{
     color: rgba(0, 0, 0, 0.25);
     border: none;
 }
-.team-content .description{
+.description{
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 1fr 1fr 1fr 1fr;
     gap: 30px 200px;
-    background: #F5F5F5;
+    background: #efefef;
     border-radius: 10px;
     padding: 50px 150px 50px 50px;
 }
-.team-content .description h4{
+.description h4{
     font-weight: 400;
     font-size: 20px;
     line-height: 30px;
     text-transform: capitalize;
     color: rgba(0, 0, 0, 0.36);
 }
-.team-content .description h5{
+.description h5{
     font-weight: 600;
     font-size: 20px;
     line-height: 30px;
     text-transform: capitalize;
     color: #243A73;
     margin-top: 2px;
+}
+
+
+.profile-footer{
+    width: 1480px;
+    display: grid;
+    grid-template-columns: 1fr 0.7fr;
+    grid-template-rows: 1fr;
+    gap: 0 140px;
+}
+.profile-footer .description{
+    padding: 0;
+    background: transparent;
+}
+.profile-footer .title h4{
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 30px;
+    text-transform: capitalize;
+    color: #0E538C;
+    text-align: start;
+}
+.profile-footer hr{
+    margin: 15px 0 60px 0;
+    height: 2px;
+    background: linear-gradient(to right ,#243A73 50%, rgba(0, 0, 0, 0.25) 50%);
+    border: none;
+}
+.blue-nintendo{
+    background: #243A73;
+    border-radius: 20px;
+    padding: 30px;
+    color: white;
+}
+.blue-nintendo h3{
+    font-weight: 600;
+    font-size: 20px;
+    text-transform: capitalize;    
+    margin-bottom: 16px;
+}
+.blue-nintendo p{
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    text-transform: capitalize;
+    color: #D9D9D9;
+}
+.blue-nintendo a{
+    color: white;
+    text-decoration: none;
+}
+.blue-nintendo a:hover{
+    text-decoration: underline;
+}
+.mini-doc{
+    display: flex;
+}
+.mini-doc img{
+    width: 77px;
+    height: 54px;
+    border-radius: 4px;
+}
+.mini-doc .info{
+    margin-left: 22px;
+}
+.mini-doc:nth-child(3){
+    margin:  20px 0 20px 0;
 }
