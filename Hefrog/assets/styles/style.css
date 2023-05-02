@@ -2103,7 +2103,7 @@ body{
     align-items: center;
     height: 64px;
     transition: .2s;
-    width: 90%;
+    width: 304px;
     border-radius: 0px 36px 36px 0px;
     margin: 8px 0;
 }
@@ -2138,6 +2138,7 @@ body{
 .profile-section .menu .nav-bar .url:last-child::before{
     content: url(../images/iconproduct.png);
 }
+
 #hidmen{
     display: none;
     position: fixed;
@@ -2172,7 +2173,18 @@ body{
     display: flex;
     flex-direction: column;
 }
-
+#burger:checked ~ .profile-section .menu .nav-bar .url{
+    animation: opacity-orange 1s forwards;
+    opacity: 0;
+}
+@keyframes opacity-orange {
+    0, 80%{
+        opacity: 0;
+    }
+    100%{
+        opacity: 1;
+    }
+}
 
 
 .profile-main .profile-section .gradient{
